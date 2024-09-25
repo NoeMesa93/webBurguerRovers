@@ -1,0 +1,84 @@
+#fondoBurguer {
+    background-image: url(../imagenes/images/fondo.jpg);
+    background-blend-mode: multiply;
+    background-color: #666;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedorCarta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 60vh;
+    width: 100%;
+}
+
+.textoCarta h1 {
+    font-family: "Nunito", sans-serif;
+    font-style: italic;
+    color: white;
+    padding-bottom: 0.625rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+
+.textoCarta h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: tomato;
+    font-size: 1.25rem;
+    padding-bottom: 0.75rem;
+}
+
+.textoCarta p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.125rem;
+    padding-bottom: 0.75rem;
+}
+
+.botonCarta {
+    padding: 1.25rem;
+    background-color: tomato;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    border: 0.125rem tomato solid;
+}
+
+.botonCarta:hover {
+    color: tomato;
+    background-color: rgba(241, 237, 232, 0.0);
+
+    i {
+        padding-left: 0.3125rem;
+        color: tomato;
+        transition: 0.8s;
+    }
+}
+
+.textoCarta ul {
+    margin-top: 1.25rem;
+}
+
+.textoCarta ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 1.875rem;
+    margin: 0.5rem;
+}
+
+.textoCarta i {
+    color: white;
+    transition: 0.6s;
+
+    &:hover {
+        color: tomato;
+        font-size: 3.125rem;
+    }
+}

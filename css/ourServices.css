@@ -1,0 +1,240 @@
+/* OUR SERVICES */
+
+#ourServices {
+    display: flex;
+    justify-content: center;
+}
+
+#ourServices .wrapper {
+    max-width: 75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ourServices .textoOurServices {
+    margin: 2.1875rem 0 2.1875rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.375rem;
+    font-family: "Nunito";
+    font-style: italic;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoOurServices h2 span {
+    color: tomato;
+}
+
+#ourServices .listaServicios {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 3.125rem;
+}
+
+.listaServicios li {
+    border-left: grey 0.0625rem solid;
+    padding: 0 0 2.5em 0.9375rem;
+}
+
+.listaServicios #icono {
+    font-size: 1.5rem;
+    padding: 0.625rem;
+    border: tomato solid 0.0625rem;
+    margin-bottom: 0.9375rem;
+}
+
+.listaServicios li p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 0.625rem 0;
+    color: grey;
+}
+
+.listaServicios li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: tomato;
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+
+
+/* ABOUT US */
+
+#aboutUs img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+#aboutUs {
+    display: flex;
+    justify-content: center;
+
+}
+
+#aboutUs .wrapper {
+    max-width: 75rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aboutUsTitle {
+    /* border: solid red 3px; */
+    display: flex;
+    justify-content: center;
+    padding: 2.1875rem 0 2.1875rem 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.375rem;
+    font-style: italic;
+    flex-direction: column;
+}
+
+.Xtachada {
+    position: relative;
+    color: tomato;
+    text-align: center;
+    width: 100%;
+
+}
+
+.Xtachada::after {
+    content: "";
+    position: absolute;
+    bottom: 0.6875rem;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: tomato;
+    left: 0;
+}
+
+.aboutUsTitle h2 span {
+    color: tomato;
+}
+
+.ourHistory {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3.125rem;
+}
+
+.imagenAboutUs {
+    width: 100%;
+    padding-right: 1.875rem;
+}
+
+.ourHistoryText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 2.8125rem;
+}
+
+.ourHistoryText h4 {
+    font-size: 1.25rem;
+    padding: 0.625rem 0;
+}
+
+.ourHistoryText p {
+    padding: 0.5rem 0;
+    font-weight: 400;
+    color: grey;
+}
+
+.ourHistoryText p:nth-child(2) {
+    color: tomato;
+}
+
+.ourHistory .buttonHistory {
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: tomato;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9375rem;
+    border: 0.125rem tomato solid;
+    cursor: pointer;
+
+    i {
+        color: white;
+    }
+}
+
+
+.buttonHistory:hover {
+    color: tomato;
+    background-color: rgba(255, 255, 255, 0);
+
+
+    i {
+        color: tomato;
+        font-size: 1.25rem;
+        transition: 2s padding-right, 2s color;
+    }
+}
+
+.contenedorImg {
+    border: solid tomato 0.25rem;
+    transform: rotateZ(15deg);
+    transition: transform 0.3s;
+
+    img {
+        transform: rotateZ(-15deg);
+        transition: transform 0.3s;
+    }
+
+    &:hover {
+        transform: rotateZ(0deg);
+
+        img {
+            transform: rotateZ(0deg);
+        }
+    }
+}
+
+
+/* Boton arriba */
+
+.goTop {
+    position: fixed;
+    bottom: 3.125rem;
+    right: 2.5rem;
+    margin-bottom: 1.25rem;
+
+    i {
+        cursor: pointer;
+        font-size: 3.125rem;
+    }
+}
+
+@media(width < 37.5rem) {
+
+    #ourServices .listaServicios {
+        flex-direction: column;
+
+        li {
+            border-left: 0 grey solid;
+            border-bottom: 0.0625rem grey solid;
+        }
+    }
+
+    #aboutUs .ourHistory {
+        flex-direction: column;
+
+        .imagenAboutUs {
+            padding-bottom: 3.125rem;
+        }
+    }
+}
